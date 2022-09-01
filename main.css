@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.logo{
+    height: 8vh;
+    margin:2% auto;
+}
+
+.encryptor{
+    width: 55%;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.text{
+    background: none;
+    border: none;
+    font-size: 2vw;
+    color: #0A3871;
+    width: 100%;
+    height: 70%;
+    margin-top:10%;
+    resize:none;
+}
+
+label{
+    font-size: 1vw;
+    color: #495057;
+    padding: 1% 0% 1% 0%;
+}
+
+.text::placeholder{
+    opacity: 1;
+}
+
+.text:focus{
+    outline: none;
+}
+
+.buttons{
+    height: 25%;
+    display: flex;
+}
+
+input{
+    font-size: 90%;
+    width: 45%;
+    height: 45%;
+    border: 0.1vh solid darkblue;
+    border-radius: 1.5vw;
+    transition: all 1s ease;
+}
+
+.btn-encrypt{
+    background:#0A3871;
+    color:#D8DFE8;
+    margin-right: 5%;
+}
+
+.btn-decrypt{
+    background:#D8DFE8;
+    color:#0A3871;
+}
+
+.btn-encrypt:hover{
+    background:#D8DFE8;
+    color:#0A3871;
+}
+
+.btn-decrypt:hover{
+    background:#0A3871;
+    color:#D8DFE8;
+}
+
+input:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.show-result{
+    width: 35%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-result{
+    width: 90%;
+    height: 92%;
+    background-color: white;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.muñeco{
+    width: 25vw;
+}
+
+h2{
+    text-align: center;
+    color: #343A40;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+h3{
+    text-align: center;
+    color: #495057;
+    font-size: 1vw;
+    margin-top: 2%;
+    font-weight: normal;
+}
+
+.result{
+    height: 95%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-result{
+    background: none;
+    border: none;
+    font-size: 2vw;
+    color: #495057;
+    width: 80%;
+    height: 85%;
+    resize:none;
+}
+
+.text-result:focus{
+    outline: none;
+}
+
+.btn-copy{
+    height: 10%;
+    background:#0A3871;
+    color:#D8DFE8;
+}
+
+footer{
+    background: #0A3871;
+    width: 100%;
+    height: 10vh;
+}
+
+@media screen and (max-width:768px ){
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+    }
+
+    .logo{
+        margin-left: 5%;
+        height: 5vh;
+    }
+
+    .encryptor{
+        width: 90%;
+        height: 45vh;
+    }
+
+    input{
+        height: 100%;
+    }
+    .text{
+        margin-top:0;
+    }
+
+    .buttons{
+        height: 10%;
+        justify-content: space-between;
+    }
+
+    .btn-encrypt{
+        margin-right: 0;
+    }
+    h2{
+        text-align: center;
+        color: #343A40;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    
+    h3{
+        text-align: center;
+        color: #495057;
+        font-size: 1.5vw;
+        margin-top: 2%;
+        font-weight: normal;
+    }
+
+    .show-result{
+        width: 100%;
+        height: 25vh;
+    }
+
+    .result{
+        width: 100%;
+    }
+
+    .text-result{
+        width:90%;
+        height: 70%;;
+    }
+    .btn-copy{
+        height: 20%;
+        width: 30%;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    
+}
